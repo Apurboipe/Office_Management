@@ -51,6 +51,12 @@ namespace Office_Management
                 message = studentManager.SaveStudentInfo(student);
                 clear();
                 MessageBox.Show(message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (message== "Student Insert Successful.")
+                {
+                    Student_View studentView=new Student_View();
+                    this.Hide();
+                    studentView.Show();
+                }
 
             }
             catch (Exception exception)

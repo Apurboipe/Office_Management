@@ -600,7 +600,7 @@ namespace Office_Management.DLA.Getway
             {
                 int aroll = 0;
                 connection.Open();
-                queray = "Select studentRoll From chairmanView_tbl where teacherUsername=('" + name + "')";
+                queray = "Select studentRoll From chairmanView_tbl where chairmanUsername=('" + name + "')";
                 command = new SqlCommand(queray, connection);
                 int effectiveRow = command.ExecuteNonQuery();
                 SqlDataReader reader = command.ExecuteReader();

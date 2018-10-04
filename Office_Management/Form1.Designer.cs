@@ -120,7 +120,7 @@
             this.deptTextBox.ReadOnly = true;
             this.deptTextBox.Size = new System.Drawing.Size(423, 35);
             this.deptTextBox.TabIndex = 1;
-            this.deptTextBox.Text = "Computer Science Engineering";
+            this.deptTextBox.Text = "Computer Science & Engineering";
             this.deptTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
