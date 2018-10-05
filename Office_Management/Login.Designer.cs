@@ -75,7 +75,7 @@
             this.loginComboBox.Location = new System.Drawing.Point(260, 130);
             this.loginComboBox.Name = "loginComboBox";
             this.loginComboBox.Size = new System.Drawing.Size(423, 37);
-            this.loginComboBox.TabIndex = 18;
+            this.loginComboBox.TabIndex = 0;
             this.loginComboBox.SelectedIndexChanged += new System.EventHandler(this.loginComboBox_SelectedIndexChanged);
             // 
             // userNameTextBox
@@ -84,7 +84,7 @@
             this.userNameTextBox.Location = new System.Drawing.Point(260, 191);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(423, 35);
-            this.userNameTextBox.TabIndex = 19;
+            this.userNameTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -102,7 +102,7 @@
             this.paswordTextBox.Location = new System.Drawing.Point(260, 250);
             this.paswordTextBox.Name = "paswordTextBox";
             this.paswordTextBox.Size = new System.Drawing.Size(423, 35);
-            this.paswordTextBox.TabIndex = 19;
+            this.paswordTextBox.TabIndex = 2;
             this.paswordTextBox.UseSystemPasswordChar = true;
             // 
             // loginButton
@@ -111,7 +111,7 @@
             this.loginButton.Location = new System.Drawing.Point(521, 374);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(162, 43);
-            this.loginButton.TabIndex = 20;
+            this.loginButton.TabIndex = 4;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
@@ -122,7 +122,7 @@
             this.signuoButton.Location = new System.Drawing.Point(305, 374);
             this.signuoButton.Name = "signuoButton";
             this.signuoButton.Size = new System.Drawing.Size(162, 43);
-            this.signuoButton.TabIndex = 20;
+            this.signuoButton.TabIndex = 5;
             this.signuoButton.Text = "Sign Up";
             this.signuoButton.UseVisualStyleBackColor = true;
             this.signuoButton.Click += new System.EventHandler(this.signuoButton_Click);
@@ -154,7 +154,7 @@
             this.rollNumberTextBox.Location = new System.Drawing.Point(260, 308);
             this.rollNumberTextBox.Name = "rollNumberTextBox";
             this.rollNumberTextBox.Size = new System.Drawing.Size(423, 35);
-            this.rollNumberTextBox.TabIndex = 19;
+            this.rollNumberTextBox.TabIndex = 3;
             this.rollNumberTextBox.Visible = false;
             // 
             // Login

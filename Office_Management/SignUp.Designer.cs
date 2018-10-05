@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.bakeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // signuoButton
@@ -44,7 +45,7 @@
             this.signuoButton.Location = new System.Drawing.Point(519, 338);
             this.signuoButton.Name = "signuoButton";
             this.signuoButton.Size = new System.Drawing.Size(221, 43);
-            this.signuoButton.TabIndex = 27;
+            this.signuoButton.TabIndex = 3;
             this.signuoButton.Text = "Sign Up";
             this.signuoButton.UseVisualStyleBackColor = true;
             this.signuoButton.Click += new System.EventHandler(this.signuoButton_Click);
@@ -55,7 +56,7 @@
             this.paswordTextBox.Location = new System.Drawing.Point(317, 254);
             this.paswordTextBox.Name = "paswordTextBox";
             this.paswordTextBox.Size = new System.Drawing.Size(423, 35);
-            this.paswordTextBox.TabIndex = 25;
+            this.paswordTextBox.TabIndex = 2;
             this.paswordTextBox.UseSystemPasswordChar = true;
             // 
             // userNameTextBox
@@ -64,7 +65,7 @@
             this.userNameTextBox.Location = new System.Drawing.Point(317, 195);
             this.userNameTextBox.Name = "userNameTextBox";
             this.userNameTextBox.Size = new System.Drawing.Size(423, 35);
-            this.userNameTextBox.TabIndex = 26;
+            this.userNameTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -90,7 +91,7 @@
             this.loginiTypeComboBox.Location = new System.Drawing.Point(317, 134);
             this.loginiTypeComboBox.Name = "loginiTypeComboBox";
             this.loginiTypeComboBox.Size = new System.Drawing.Size(423, 37);
-            this.loginiTypeComboBox.TabIndex = 24;
+            this.loginiTypeComboBox.TabIndex = 0;
             // 
             // label2
             // 
@@ -122,11 +123,23 @@
             this.label4.TabIndex = 28;
             this.label4.Text = "Sign Up Form";
             // 
+            // bakeButton
+            // 
+            this.bakeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bakeButton.Location = new System.Drawing.Point(329, 338);
+            this.bakeButton.Name = "bakeButton";
+            this.bakeButton.Size = new System.Drawing.Size(162, 43);
+            this.bakeButton.TabIndex = 29;
+            this.bakeButton.Text = "Back";
+            this.bakeButton.UseVisualStyleBackColor = true;
+            this.bakeButton.Click += new System.EventHandler(this.bakeButton_Click);
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 447);
+            this.Controls.Add(this.bakeButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.signuoButton);
             this.Controls.Add(this.paswordTextBox);
@@ -154,5 +167,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button bakeButton;
     }
 }

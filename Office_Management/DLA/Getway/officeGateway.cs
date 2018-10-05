@@ -372,6 +372,39 @@ namespace Office_Management.DLA.Getway
                 }
             }
         }
+        public List<string> GetAdministrationList()
+        {
+            try
+            {
+                List<string> administrationList = new List<string>();
+
+                connection.Open();
+                queray = "Select name From administrationInfo_tbl";
+                command = new SqlCommand(queray, connection);
+                int effectiveRow = command.ExecuteNonQuery();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read() == true)
+                {
+                    string name = "";
+                    name = reader[0].ToString();
+                    administrationList.Add(name);
+                }
+                connection.Close();
+                return administrationList;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
         public List<string> GetStudentSessionList()
         {
             try
@@ -564,6 +597,40 @@ namespace Office_Management.DLA.Getway
                 }
             }
         }
+        public string SetStudentToAdministration(Assign assign)
+        {
+            try
+            {
+                connection.Open();
+                string message;
+                queray = "Insert into administrationView_tbl Values('" + assign.Name + "','" + assign.Roll + "','" +
+                         assign.Session + "')";
+                command = new SqlCommand(queray, connection);
+                int effectiveRow = command.ExecuteNonQuery();
+                if (effectiveRow != 0)
+                {
+                    message = "Student Assign Successful.";
+                }
+                else
+                {
+                    message = "Sorry Please Tyr Again.";
+                }
+                connection.Close();
+                return message;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
         public string GetChairmanUserNameFromName(string name)
         {
             try
@@ -594,6 +661,36 @@ namespace Office_Management.DLA.Getway
                 }
             }
         }
+        public string GetAdministrationUserNameFromName(string name)
+        {
+            try
+            {
+                string ausername = "";
+                connection.Open();
+                queray = "Select username From administrationInfo_tbl where name=('" + name + "')";
+                command = new SqlCommand(queray, connection);
+                int effectiveRow = command.ExecuteNonQuery();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read() == true)
+                {
+                    ausername = reader[0].ToString();
+                }
+                connection.Close();
+                return ausername;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
         public int GetStudentRollNumberForChairmanOffice(string name)
         {
             try
@@ -601,6 +698,36 @@ namespace Office_Management.DLA.Getway
                 int aroll = 0;
                 connection.Open();
                 queray = "Select studentRoll From chairmanView_tbl where chairmanUsername=('" + name + "')";
+                command = new SqlCommand(queray, connection);
+                int effectiveRow = command.ExecuteNonQuery();
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read() == true)
+                {
+                    aroll = Convert.ToInt32(reader[0]);
+                }
+                connection.Close();
+                return aroll;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+
+            finally
+            {
+                if (connection.State == ConnectionState.Open)
+                {
+                    connection.Close();
+                }
+            }
+        }
+        public int GetStudentRollNumberForAdministrationOffice(string name)
+        {
+            try
+            {
+                int aroll = 0;
+                connection.Open();
+                queray = "Select studentRoll From administrationView_tbl where administrationUsername=('" + name + "')";
                 command = new SqlCommand(queray, connection);
                 int effectiveRow = command.ExecuteNonQuery();
                 SqlDataReader reader = command.ExecuteReader();

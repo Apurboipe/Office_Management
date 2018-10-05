@@ -62,7 +62,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(273, 108);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(423, 35);
-            this.nameTextBox.TabIndex = 1;
+            this.nameTextBox.TabIndex = 0;
             // 
             // label2
             // 
@@ -119,7 +119,7 @@
             this.deptTextBox.Name = "deptTextBox";
             this.deptTextBox.ReadOnly = true;
             this.deptTextBox.Size = new System.Drawing.Size(423, 35);
-            this.deptTextBox.TabIndex = 1;
+            this.deptTextBox.TabIndex = 4;
             this.deptTextBox.Text = "Computer Science & Engineering";
             this.deptTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -140,7 +140,7 @@
             this.noteTextBox.Multiline = true;
             this.noteTextBox.Name = "noteTextBox";
             this.noteTextBox.Size = new System.Drawing.Size(423, 40);
-            this.noteTextBox.TabIndex = 1;
+            this.noteTextBox.TabIndex = 5;
             // 
             // Save
             // 
@@ -148,7 +148,7 @@
             this.Save.Location = new System.Drawing.Point(548, 491);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(162, 43);
-            this.Save.TabIndex = 2;
+            this.Save.TabIndex = 6;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
@@ -159,7 +159,7 @@
             this.clearButton.Location = new System.Drawing.Point(363, 491);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(146, 43);
-            this.clearButton.TabIndex = 2;
+            this.clearButton.TabIndex = 7;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
@@ -196,7 +196,7 @@
             this.sessionComboBox.Location = new System.Drawing.Point(273, 233);
             this.sessionComboBox.Name = "sessionComboBox";
             this.sessionComboBox.Size = new System.Drawing.Size(423, 37);
-            this.sessionComboBox.TabIndex = 3;
+            this.sessionComboBox.TabIndex = 2;
             // 
             // label7
             // 

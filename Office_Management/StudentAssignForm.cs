@@ -42,7 +42,7 @@ namespace Office_Management
             }
             if (aValue==3)
             {
-                
+                nameComboBox.DataSource = officemanager.GetAdministrationList();
             }
             sexComboBox.DataSource = officemanager.GetStudentSessionList();
         }
@@ -239,9 +239,9 @@ namespace Office_Management
                     {
                         Session = sexComboBox.Text,
                         Roll = Convert.ToInt32(rollcomboBox.Text),
-                        Name = officemanager.GetChairmanUserNameFromName(nameComboBox.Text)
+                        Name = officemanager.GetAdministrationUserNameFromName(nameComboBox.Text)
                     };
-                    message = officemanager.SetStudentToTeacher(assign);
+                    message = officemanager.SetStudentToAdministration(assign);
                 }
 
                 MessageBox.Show(message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);

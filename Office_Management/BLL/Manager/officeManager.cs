@@ -138,6 +138,12 @@ namespace Office_Management.BLL.Manager
             namelist = officegateway.GetChairmanNameList();
             return namelist;
         }
+        public List<string> GetAdministrationList()
+        {
+            List<string> namelist = new List<string>();
+            namelist = officegateway.GetAdministrationList();
+            return namelist;
+        }
         public List<string> GetStudentSessionList()
         {
             List<string> sessionList = new List<string>();
@@ -206,6 +212,34 @@ namespace Office_Management.BLL.Manager
                 message = "Please Select Session.";
             }
             return message;
+        }
+        public string SetStudentToAdministration(Assign assign)
+        {
+            string message = null;
+            if (assign.Name != "" && assign.Session != "" && assign.Roll != 0)
+            {
+                if (officegateway.GetStudentRollNumberForAdministrationOffice(assign.Name) != assign.Roll)
+                {
+                    message = officegateway.SetStudentToAdministration(assign);
+                }
+                else
+                {
+                    message = "Student Already Assign To Administration.";
+                }
+            }
+            else if (assign.Name == "")
+            {
+                message = "Please Select Name.";
+            }
+            else if (assign.Session == "")
+            {
+                message = "Please Select Session.";
+            }
+            return message;
+        }
+        public string GetAdministrationUserNameFromName(string name)
+        {
+            return officegateway.GetAdministrationUserNameFromName(name);
         }
         public string GetAdministrationUsername(string username)
         {

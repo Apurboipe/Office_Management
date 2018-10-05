@@ -88,7 +88,7 @@ namespace Office_Management
             this.administrationDataGridView.Location = new System.Drawing.Point(13, 257);
             this.administrationDataGridView.Name = "administrationDataGridView";
             this.administrationDataGridView.RowTemplate.Height = 28;
-            this.administrationDataGridView.Size = new System.Drawing.Size(963, 401);
+            this.administrationDataGridView.Size = new System.Drawing.Size(852, 401);
             this.administrationDataGridView.TabIndex = 21;
             // 
             // name
@@ -124,10 +124,10 @@ namespace Office_Management
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(363, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(300, 37);
+            this.label1.Size = new System.Drawing.Size(224, 29);
             this.label1.TabIndex = 20;
             this.label1.Text = "Administration View";
             // 
@@ -216,7 +216,9 @@ namespace Office_Management
             this.Controls.Add(this.label3);
             this.Controls.Add(this.deptTextBox);
             this.Controls.Add(this.label5);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AdministrationView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.administrationDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

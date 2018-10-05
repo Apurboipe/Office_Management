@@ -64,7 +64,7 @@
             this.sexComboBox.Location = new System.Drawing.Point(288, 256);
             this.sexComboBox.Name = "sexComboBox";
             this.sexComboBox.Size = new System.Drawing.Size(423, 37);
-            this.sexComboBox.TabIndex = 18;
+            this.sexComboBox.TabIndex = 2;
             // 
             // Save
             // 
@@ -72,7 +72,7 @@
             this.Save.Location = new System.Drawing.Point(470, 461);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(241, 43);
-            this.Save.TabIndex = 16;
+            this.Save.TabIndex = 5;
             this.Save.Text = "Save";
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
@@ -84,7 +84,7 @@
             this.noteTextBox.Multiline = true;
             this.noteTextBox.Name = "noteTextBox";
             this.noteTextBox.Size = new System.Drawing.Size(423, 40);
-            this.noteTextBox.TabIndex = 11;
+            this.noteTextBox.TabIndex = 4;
             // 
             // label6
             // 
@@ -112,7 +112,7 @@
             this.designationTextBox.Location = new System.Drawing.Point(288, 195);
             this.designationTextBox.Name = "designationTextBox";
             this.designationTextBox.Size = new System.Drawing.Size(423, 35);
-            this.designationTextBox.TabIndex = 12;
+            this.designationTextBox.TabIndex = 1;
             // 
             // deptTextBox
             // 
@@ -121,7 +121,7 @@
             this.deptTextBox.Name = "deptTextBox";
             this.deptTextBox.ReadOnly = true;
             this.deptTextBox.Size = new System.Drawing.Size(423, 35);
-            this.deptTextBox.TabIndex = 13;
+            this.deptTextBox.TabIndex = 3;
             this.deptTextBox.Text = "Computer Science & Engineering";
             // 
             // label5
@@ -150,7 +150,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(288, 131);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(423, 35);
-            this.nameTextBox.TabIndex = 14;
+            this.nameTextBox.TabIndex = 0;
             // 
             // label1
             // 

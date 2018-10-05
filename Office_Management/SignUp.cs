@@ -33,14 +33,24 @@ namespace Office_Management
                 };
                 message = accountManager.SaveAccountInfo(account);
                 MessageBox.Show(message, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Login login=new Login();
-                this.Hide();
-                login.Show();
+                if (message== "Account Create Successful.")
+                {
+                    Login login = new Login();
+                    this.Hide();
+                    login.Show();
+                }
             }
             catch (Exception exception)
             {
                 MessageBox.Show("Error." + exception.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void bakeButton_Click(object sender, EventArgs e)
+        {
+            Login login=new Login();
+            this.Hide();
+            login.Show();
         }
     }
 }

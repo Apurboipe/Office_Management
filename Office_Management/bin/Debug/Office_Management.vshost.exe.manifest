@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Office_Management.exe" size="87552">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Office_Management.exe" size="89600">
       <assemblyIdentity name="Office_Management" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yhZ8b0uPIWHmU4mHmrA6Bzx3NX7mIV3reMU7inYlLCs=</dsig:DigestValue>
+        <dsig:DigestValue>j1vgUWa9mTDWiUfZpH0MzI6lS0q7l+d3yrXW8m2V6SQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
